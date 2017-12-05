@@ -42,7 +42,7 @@ public class threadingtheneadle extends Thread {
         threadingtheneadle examplethree = new threadingtheneadle();
         examplethree.start();
         
-        System.out.println("All done now.");
+        System.out.println("I'm just getting started.");
     }
 /*
     static void exampleofexecutors() {
