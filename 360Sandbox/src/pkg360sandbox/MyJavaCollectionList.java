@@ -18,9 +18,9 @@ class MyJavaCollectionList {
     public static void main(String[] args) {}
      
     //create arrayList
-    public static ArrayList<String> numarray = new ArrayList<String>();
+    private static ArrayList<String> numarray = new ArrayList<String>();
     
-    static void startlistcollections() {
+    public static void startlistcollections() {
         double i = floor(random() * 10) + 5;
         System.out.println("We'll start with " + i + " items in an array.\n");
         double n = 0;
@@ -28,34 +28,20 @@ class MyJavaCollectionList {
             enternumbersforlist();
             n = n+1;
         }
-        
         printlist();
-        
         System.out.println("We will now delete a random number from the array.\n");
         deletenumberonlist();
-        
+        printlist();
         //Replace value by position value
 	System.out.println("Let's replace the second number with Frankenstein.\n");
 	numarray.add(1, "Frankenstein");
-	System.out.println("Here's what's in the list: " + numarray + "\n");
-        
+	printlist();
         // remove by potition value
         System.out.println("Let's remove that since it is not a number\n");
 	numarray.remove("Frankenstein");
-	System.out.println("Here's what is left in the list: " + numarray + "\n");
-        
-       // enternumbersforset();
-
-       // enternumbersformap();
-        
-        // printset();
-
-       // printmap();
-
-
+	printlist();
     }
     
-
     private static void enternumbersforlist() {
         double inputnumber = floor(random() * 100);
        System.out.println("You are adding " + inputnumber + " to the array.");

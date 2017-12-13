@@ -7,6 +7,7 @@ package pkg360sandbox;
 
 import java.util.Scanner;
 
+
 /**
  *
  * @author reyob
@@ -31,7 +32,7 @@ public class Main {
         System.out.println("5 to see Queue");
         System.out.println("6 to see Threading");
         System.out.println("7 to see Executors");
-        System.out.println("8 to see ");
+        System.out.println("8 to see HTTPconnection");
         System.out.println("9 to see ");
         
         //saves user input
@@ -60,12 +61,12 @@ public class Main {
             case 7:
                 threadingtheneadle2.exampleofexecutors();
                 break;
-        /*    case 8:
-                 
+            case 8:
+                Connection.getconnection();
                 break;
             case 9:
-                Connection.getconnection();
-                break; */
+               
+                break; 
             
             default:
                 System.out.println("Enter a valid option.");
