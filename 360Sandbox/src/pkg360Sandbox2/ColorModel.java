@@ -14,6 +14,7 @@ public class ColorModel {
     }
     
     public boolean isYellow(){
+        wrongMatches = 0;
         return true;
     }
     

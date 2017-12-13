@@ -21,6 +21,7 @@ public class ColorController {
         this.theView.addBlackListener(new WrongColorListener());
         this.theView.addPurpleListener(new WrongColorListener());
         this.theView.addYellowListener(new CorrectColorListener());
+        this.theView.setWrongMatches(theModel.getNumberWrongMatches());
     }
     
 class WrongColorListener implements ActionListener{

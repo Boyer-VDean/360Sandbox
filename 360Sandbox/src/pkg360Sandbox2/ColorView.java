@@ -17,6 +17,7 @@ public class ColorView extends JFrame {
     private JButton purpleButton= new JButton ("Purple");
     private JLabel bottom = new JLabel("This is how many times you have guessed wrong");
     private JTextField wrongMatches = new JTextField(10);
+    private JLabel bottom2 = new JLabel("Will reset to 0 when you guess correctly");
     
     ColorView(){
         //Set up view and add components
@@ -35,6 +36,7 @@ public class ColorView extends JFrame {
         contPanel.add(purpleButton);
         contPanel.add(bottom);
         contPanel.add(wrongMatches);
+        contPanel.add(bottom2);
         
         this.add(contPanel);
         
