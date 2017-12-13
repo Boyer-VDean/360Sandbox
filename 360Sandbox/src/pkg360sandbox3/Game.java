@@ -37,15 +37,3 @@ public class Game {
     }
     
 }
-
-/*
- @ManyToMany(cascade=CascadeType.ALL)  
-    @JoinTable(name="author_book", joinColumns=@JoinColumn(name="book_id"), inverseJoinColumns=@JoinColumn(name="author_id"))  
-    public Set<Author> getAuthors()  
-    {  
-        return authors;  
-    }  
-    public void setAuthors(Set<Author> authors)  
-    {  
-        this.authors = authors;  
-*/
