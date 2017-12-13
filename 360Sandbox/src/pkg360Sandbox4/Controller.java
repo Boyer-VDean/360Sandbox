@@ -24,5 +24,6 @@ public class Controller {
         MathModel handler = hashMapOfCommands.get(command);
         handler.thirteenMath(num);
         
+        
     }
 }
